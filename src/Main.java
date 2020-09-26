@@ -1,15 +1,48 @@
 
 public class Main {
 	public static void main(String[] args) {
-		Tax icms = new ICMS();
-		Tax iss = new ISS();
-		
+		CalculatorTaxes calculator = new CalculatorTaxes();
 		Product product = new Product(50.0);
 		
-		CalculatorTaxes calculator = new CalculatorTaxes();
+		/////////////////////Simple Taxes///////////////////
+				
+				
+		//		Tax icms = new ICMS();
+		//		calculator.calculateTaxes(product, icms);
+				
+				
+		///////////////////////////////////////////////////	
+				
+				
+		/////////////////////Conditional Taxes///////////////////
+				
+				
+		//Tax iop = new IOP();
+		//calculator.calculateTaxes(product, iop);
 		
-		calculator.calculateTaxes(product, icms);
-		calculator.calculateTaxes(product, iss);
+		
+		///////////////////////////////////////////////////	
+		
+		
+		/////////////////////State for Taxes///////////////////
+				
+				
+		//product.addExtraTax();
+		
+		//System.out.println(product.getValue());
+		
+		//product.oldState();
+		
+		//product.addExtraTax();
+		
+		
+		//System.out.println(product.getValue());
+		
+		
+		///////////////////////////////////////////////////	
+		
 		
 	}
+	
 }
+
